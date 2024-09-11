@@ -1,0 +1,84 @@
+html, body {
+    font-family: "Poppins", sans-serif;
+    background-color: #1a202c;
+    color:rgb(201, 209, 217)
+}
+
+.dex {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+@media (max-width: 1200px) {
+    .dex {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .dex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .dex {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.card {
+    border: black 5px solid;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #161b22;
+}
+
+.top_stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.prices {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 35px;
+}
+
+.health, .stage, .type {
+    margin: 0 5px;
+}
+
+.name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: -22px;
+    background-color:#1b2129;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid black;
+}
