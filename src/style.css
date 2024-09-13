@@ -82,3 +82,6 @@ html, body {
     line-height: 50px;
     border: 2px solid black;
 }
+.glint {
+    background-color: black;
+}

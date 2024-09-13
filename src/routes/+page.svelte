@@ -10,7 +10,10 @@
 <body>
     <div class="dex">
         {#each cards as card}
-            <div class="card">
+            <div class="card {card.shiny ? 'shiny' : ''}">
+                {#if card.shiny}
+                    <div class="glint"></div>
+                {/if}
                 <div class="top_stats">
                     <h5 class="stage">{card["stage"]}</h5>
                     <h5 class="type">{card["type"]}</h5>
